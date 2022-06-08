@@ -1,0 +1,84 @@
+
+.container{
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+}
+
+.main{
+    
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 1rem;
+}
+.title{
+    font-family: "GoodTimes", 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: rgb(5,16,34);
+    width: 80%;
+    text-align: center;
+}
+.title::before{
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    left: -4rem;
+    width: 2rem;
+    border-top: 1px solid;
+    border: 1px solid rgb(5,16,34);
+    -webkit-transform: rotate(45deg) translateY(-50%);
+    -ms-transform: rotate(45deg) translateY(-50%);
+        transform: rotate(45deg) translateY(-50%);
+}
+.title::after{
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    right: -4rem;
+    width: 2rem;
+    border-top: 1px solid;
+    border: 1px solid rgb(5,16,34);
+    -webkit-transform: rotate(45deg) translateY(-50%);
+    -ms-transform: rotate(45deg) translateY(-50%);
+        transform: rotate(45deg) translateY(-50%);
+}
+.filter{
+
+    padding: 1px 3px 1px 3px;
+    border-radius: 3px;
+    margin: 0 4px 3px 4px;
+    color: white;
+    font-weight: 400;
+}
+.filter:hover{
+    cursor: pointer;
+}

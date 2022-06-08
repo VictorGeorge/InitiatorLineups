@@ -1,0 +1,33 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.container{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.essential_button{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 3px 5px 3px 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+}
+.colorGreen{
+    background-color: rgb(119, 230, 1);
+}
+.colorBlue{
+    background-color: rgb(197, 191, 9);
+}
+.colorRed{
+    background-color: rgb(226, 55, 55);
+}
