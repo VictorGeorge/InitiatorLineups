@@ -3,6 +3,7 @@ import { bind_data, bind_detail } from '../Data/bind_data.js';
 import { haven_data, haven_detail } from '../Data/haven_data.js';
 import { split_data, split_detail } from '../Data/split_data.js';
 import { ascent_data, ascent_detail } from '../Data/ascent_data.js';
+import { icebox_data, icebox_detail } from '../Data/icebox_data.js';
 import { logs_data} from '../Data/logs_data.js';
 const AppContext = React.createContext();
 
@@ -66,6 +67,10 @@ class AppProvider extends Component {
 		if (map === 'ascent') {
 			setStateMap = 'Ascent';
 			setStateDetail = ascent_detail;
+		}
+		if (map === 'icebox') {
+			setStateMap = 'Icebox';
+			setStateDetail = icebox_detail;
 		}
 		if(direct !== 0) {
 			setStateDetail = tempLineups[direct]
@@ -353,6 +358,8 @@ class AppProvider extends Component {
 			this.updateMap('haven', 0);
 		} else if (this.state.currentMap === 'Split' || window.location.pathname.includes('split')) {
 			this.updateMap('split', 0);
+		} else if (this.state.currentMap === 'Icebox' || window.location.pathname.includes('icebox')) {
+			this.updateMap('icebox', 0);
 		}
 	};
 	hideSpinner = () => {
@@ -394,6 +401,8 @@ class AppProvider extends Component {
 			data_points = split_data;
 		}else if ( window.location.pathname.includes('ascent')) {
 			data_points = ascent_data;
+		}else if ( window.location.pathname.includes('icebox')) {
+			data_points = icebox_data;
 		}
 		return data_points;
 	};

@@ -7,6 +7,7 @@ import map_1 from '../Media/map_1.jpg';
 import map_2 from '../Media/map_2.jpg';
 import map_3 from '../Media/map_3.jpg';
 import map_4 from '../Media/map_4.jpg';
+import map_5 from '../Media/map_5.JPG';
 const Maps = () => {
 	return (
 		<AppConsumer>
@@ -36,6 +37,9 @@ const Maps = () => {
 									</Link>
 									<Link className={classes.link} style={{ textDecoration: 'none' }} to={'/ascent'}>
 										<Map title={'Ascent'} location={'Venice'} map={map_4} />
+									</Link>
+									<Link className={classes.link} style={{ textDecoration: 'none' }} to={'/icebox'}>
+										<Map title={'Icebox'} location={'Russia'} map={map_5} />
 									</Link>
 								</div>
 							</div>

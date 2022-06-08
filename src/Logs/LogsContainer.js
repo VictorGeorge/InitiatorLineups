@@ -11,7 +11,7 @@ class LogsContainer extends Component {
         let d = new Date();
         if(logItem.date) {
             let month = parseInt(logItem.date.substring(0,logItem.date.indexOf('/')))
-            if(month == d.getMonth()+1){
+            if(month === d.getMonth()+1){
                 return true;
             }
            

@@ -64,6 +64,13 @@ const Nav = () => {
 									>
 										<h1>Ascent</h1>
 									</Link>
+									<Link
+										className={classes.link}
+						
+										to={'/icebox'}
+									>
+										<h1>Icebox</h1>
+									</Link>
 								</div>
 							</div>
 						</li>

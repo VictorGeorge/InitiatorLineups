@@ -5,6 +5,7 @@ import bind_map from '../Media/bind_map.jpg';
 import haven_map from '../Media/haven_map.jpg';
 import split_map from '../Media/split_map.jpg';
 import ascent_map from '../Media/ascent_map.jpg';
+import icebox_map from '../Media/icebox_map.jpg';
 import { TweenLite, Expo } from 'gsap';
 const MapHeader = (props) => {
 	let backgroundImage = useRef(null);
@@ -29,6 +30,9 @@ const MapHeader = (props) => {
 	} else if (props.mapTitle === 'Ascent') {
 		map = ascent_map;
 		location = 'Venice';
+	} else if (props.mapTitle === 'Icebox') {
+		map = icebox_map;
+		location = 'Russia';
 	}
 	let background = {
 		backgroundImage: `url(${map})`

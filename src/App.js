@@ -7,6 +7,7 @@ import Bind from './Maps/Bind/Bind.js';
 import Haven from './Maps/Haven/Haven.js';
 import Split from './Maps/Split/Split.js';
 import Ascent from './Maps/Ascent/Ascent.js';
+import Icebox from './Maps/Icebox/Icebox.js';
 import Logs from './Logs/Logs.js';
 import Faq from './FAQ/Faq.js';
 import Default from './Default/Default.js'
@@ -22,6 +23,7 @@ function App() {
 					<Route path={'/haven'} component={Haven} />
 					<Route path={'/split'} component={Split} />
 					<Route path={'/ascent'} component={Ascent} />
+					<Route path={'/icebox'} component={Icebox} />
 					<Route path={'/logs'} component={Logs} />
 					<Route path={'/faq'} component={Faq} />
 					<Route component={Default}/>
