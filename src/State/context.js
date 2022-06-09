@@ -4,6 +4,7 @@ import { haven_data, haven_detail } from '../Data/haven_data.js';
 import { split_data, split_detail } from '../Data/split_data.js';
 import { ascent_data, ascent_detail } from '../Data/ascent_data.js';
 import { icebox_data, icebox_detail } from '../Data/icebox_data.js';
+import { breeze_data, breeze_detail } from '../Data/breeze_data.js';
 import { logs_data} from '../Data/logs_data.js';
 const AppContext = React.createContext();
 
@@ -71,6 +72,10 @@ class AppProvider extends Component {
 		if (map === 'icebox') {
 			setStateMap = 'Icebox';
 			setStateDetail = icebox_detail;
+		}
+		if (map === 'breeze') {
+			setStateMap = 'Breeze';
+			setStateDetail = breeze_detail;
 		}
 		if(direct !== 0) {
 			setStateDetail = tempLineups[direct]
@@ -360,6 +365,8 @@ class AppProvider extends Component {
 			this.updateMap('split', 0);
 		} else if (this.state.currentMap === 'Icebox' || window.location.pathname.includes('icebox')) {
 			this.updateMap('icebox', 0);
+		} else if (this.state.currentMap === 'Breeze' || window.location.pathname.includes('breeze')) {
+			this.updateMap('breeze', 0);
 		}
 	};
 	hideSpinner = () => {
@@ -403,6 +410,8 @@ class AppProvider extends Component {
 			data_points = ascent_data;
 		}else if ( window.location.pathname.includes('icebox')) {
 			data_points = icebox_data;
+		}else if ( window.location.pathname.includes('breeze')) {
+			data_points = breeze_data;
 		}
 		return data_points;
 	};

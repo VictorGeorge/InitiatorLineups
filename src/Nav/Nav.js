@@ -71,6 +71,13 @@ const Nav = () => {
 									>
 										<h1>Icebox</h1>
 									</Link>
+									<Link
+										className={classes.link}
+						
+										to={'/breeze'}
+									>
+										<h1>Breeze</h1>
+									</Link>
 								</div>
 							</div>
 						</li>
