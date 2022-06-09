@@ -9,6 +9,8 @@ import map_3 from '../Media/map_3.jpg';
 import map_4 from '../Media/map_4.jpg';
 import map_5 from '../Media/map_5.JPG';
 import map_6 from '../Media/map_6.JPG';
+import map_7 from '../Media/map_7.JPG';
+
 const Maps = () => {
 	return (
 		<AppConsumer>
@@ -44,6 +46,9 @@ const Maps = () => {
 									</Link>
 									<Link className={classes.link} style={{ textDecoration: 'none' }} to={'/breeze'}>
 										<Map title={'Breeze'} location={'Bermuda Triangle'} map={map_6} />
+									</Link>
+									<Link className={classes.link} style={{ textDecoration: 'none' }} to={'/fracture'}>
+										<Map title={'Fracture'} location={'Santa Fe'} map={map_7} />
 									</Link>
 								</div>
 							</div>

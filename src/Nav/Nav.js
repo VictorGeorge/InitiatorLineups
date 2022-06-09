@@ -78,6 +78,13 @@ const Nav = () => {
 									>
 										<h1>Breeze</h1>
 									</Link>
+									<Link
+										className={classes.link}
+						
+										to={'/fracture'}
+									>
+										<h1>Fracture</h1>
+									</Link>
 								</div>
 							</div>
 						</li>

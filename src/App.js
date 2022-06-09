@@ -9,6 +9,7 @@ import Split from './Maps/Split/Split.js';
 import Ascent from './Maps/Ascent/Ascent.js';
 import Icebox from './Maps/Icebox/Icebox.js';
 import Breeze from './Maps/Breeze/Breeze.js';
+import Fracture from './Maps/Fracture/Fracture.js';
 import Logs from './Logs/Logs.js';
 import Faq from './FAQ/Faq.js';
 import Default from './Default/Default.js'
@@ -26,6 +27,7 @@ function App() {
 					<Route path={'/ascent'} component={Ascent} />
 					<Route path={'/icebox'} component={Icebox} />
 					<Route path={'/breeze'} component={Breeze} />
+					<Route path={'/fracture'} component={Fracture} />
 					<Route path={'/logs'} component={Logs} />
 					<Route path={'/faq'} component={Faq} />
 					<Route component={Default}/>
