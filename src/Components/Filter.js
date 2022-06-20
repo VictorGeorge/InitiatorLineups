@@ -17,7 +17,7 @@ class Filter extends Component {
 								<h1
 									className={classes.filter}
 									style={{
-										backgroundColor: value.selectedFilters.easy
+										backgroundColor: value.selectedFilters && value.selectedFilters.easy
 											? 'rgb(98, 163, 29)'
 											: 'rgb(88, 88, 88)'
 									}}
@@ -28,7 +28,7 @@ class Filter extends Component {
 								<h1
 									className={classes.filter}
 									style={{
-										backgroundColor: value.selectedFilters.medium
+										backgroundColor: value.selectedFilters && value.selectedFilters.medium
 											? 'rgb(163, 157, 94)'
 											: 'rgb(88, 88, 88)'
 									}}
@@ -39,7 +39,7 @@ class Filter extends Component {
 								<h1
 									className={classes.filter}
 									style={{
-										backgroundColor: value.selectedFilters.hard
+										backgroundColor: value.selectedFilters && value.selectedFilters.hard
 											? 'rgb(175, 41, 41)'
 											: 'rgb(88, 88, 88)'
 									}}
