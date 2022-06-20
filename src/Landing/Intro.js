@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactPlayer from 'react-player';
 import classes from './Intro.module.css';
-import sova_image from '../Media/intro_sova.png';
+import fade_image from '../Media/intro_fade.png';
 
 import { TweenLite, Expo } from 'gsap/all';
 class Intro extends Component {
@@ -27,34 +27,29 @@ class Intro extends Component {
 			<div className={classes.container}>
 				<div className={classes.main}>
 					<div className={classes.right_line} />
-					<div className={classes.background_text}>vALORANT</div>
+					<div className={classes.background_text}>VALORANT</div>
 					<div ref={(div) => (this.header = div)} className={classes.header}>
 						<h1 className={classes.title}>
-							<span>03/12 &nbsp;&nbsp; //</span>
+							<span>04/27 &nbsp;&nbsp; //</span>
 							<span>INITIATOR</span>{' '}
 						</h1>
 					</div>
 					<div className={classes.main_wrapper}>
 						<div className={classes.left}>
 							<h1 ref={(div) => (this.title = div)} className={classes.main_title}>
-								SOVA
+								FADE
 							</h1>
 							<div className={classes.info}>
-								<div className={classes.origin}> Origin: &nbsp; Russia</div>
-								<div className={classes.origin}> Codename: &nbsp; Hunter</div>
+								<div className={classes.origin}> Origin: &nbsp; Turkey</div>
+								<div className={classes.origin}> Codename: &nbsp; BountyHunter</div>
 								<h2 className={classes.info_text}>
-								Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide. <br />
-									<br />
-									An archery expert, he can equip his bow with different bolts that reveal enemy
-									locations or shock nearby adversaries. He can also deploy a recon drone to survey
-									the battlefield, while his ultimate lets him fire three deadly arrow shots through
-									walls.
+								Turkish bounty hunter Fade unleashes the power of raw nightmare to seize enemy secrets. Attuned with terror itself, she hunts down targets and reveals their deepest fears - before crushing them in the dark. <br />
 								</h2>
 								<div className={classes.video_player}>
 									<ReactPlayer
 										width="300"
 										className={classes.video}
-										url="https://i.imgur.com/Uqp8GCX.mp4"
+										url="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt82a21218065dc472/625f2c47fd9afd4b1fe300ea/E-Haunt_video.mp4"
 										muted={true}
 										loop={true}
 										playing={true}
@@ -65,13 +60,10 @@ class Intro extends Component {
 							</div>
 						</div>
 						<div className={classes.right}>
-							<div className={classes.sova_image_container}>
-								<div className={classes.block} />
-								<div className={classes.block2} />
-
-								<img className={classes.sova_image} alt={'sova'} src={sova_image} />
+							<div className={classes.fade_image_container}>
+								<img className={classes.fade_image} alt={'fade'} src={fade_image} height="1070" />
 							</div>
-							<div className={classes.sova_text}>SOVA</div>
+							<div className={classes.fade_text}>FADE</div>
 						</div>
 					</div>
 				</div>

@@ -254,6 +254,12 @@ class AppProvider extends Component {
 			tempStateFilters.isEssential = true;
 		}
 
+		if (filter === 'shock') {
+			if (!this.state.isShock) {
+				itemFilters[1] = true;
+			}
+			tempStateFilters.isShock = true;
+		}
 		
 		if (filter === 'attacking') {
 			if (!this.state.selectedSide.attacking) {
