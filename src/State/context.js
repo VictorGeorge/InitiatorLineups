@@ -6,6 +6,7 @@ import { ascent_data, ascent_detail } from '../Data/ascent_data.js';
 import { icebox_data, icebox_detail } from '../Data/icebox_data.js';
 import { breeze_data, breeze_detail } from '../Data/breeze_data.js';
 import { fracture_data, fracture_detail } from '../Data/fracture_data.js';
+import { pearl_data, pearl_detail } from '../Data/pearl_data.js';
 import { logs_data} from '../Data/logs_data.js';
 const AppContext = React.createContext();
 
@@ -81,6 +82,10 @@ class AppProvider extends Component {
 		if (map === 'fracture') {
 			setStateMap = 'Fracture';
 			setStateDetail = fracture_detail;
+		}
+		if (map === 'pearl') {
+			setStateMap = 'Pearl';
+			setStateDetail = pearl_detail;
 		}
 		if(direct !== 0) {
 			setStateDetail = tempLineups[direct]
@@ -374,6 +379,8 @@ class AppProvider extends Component {
 			this.updateMap('breeze', 0);
 		} else if (this.state.currentMap === 'Fracture' || window.location.pathname.includes('fracture')) {
 			this.updateMap('fracture', 0);
+		} else if (this.state.currentMap === 'Pearl' || window.location.pathname.includes('pearl')) {
+			this.updateMap('pearl', 0);
 		}
 	};
 	hideSpinner = () => {
@@ -421,6 +428,8 @@ class AppProvider extends Component {
 			data_points = breeze_data;
 		}else if ( window.location.pathname.includes('fracture')) {
 			data_points = fracture_data;
+		}else if ( window.location.pathname.includes('pearl')) {
+			data_points = pearl_data;
 		}
 		return data_points;
 	};

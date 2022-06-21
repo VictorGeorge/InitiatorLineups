@@ -10,6 +10,7 @@ import Ascent from './Maps/Ascent/Ascent.js';
 import Icebox from './Maps/Icebox/Icebox.js';
 import Breeze from './Maps/Breeze/Breeze.js';
 import Fracture from './Maps/Fracture/Fracture.js';
+import Pearl from './Maps/Pearl/Pearl.js';
 import Logs from './Logs/Logs.js';
 import Faq from './FAQ/Faq.js';
 import Default from './Default/Default.js'
@@ -28,6 +29,7 @@ function App() {
 					<Route path={'/icebox'} component={Icebox} />
 					<Route path={'/breeze'} component={Breeze} />
 					<Route path={'/fracture'} component={Fracture} />
+					<Route path={'/pearl'} component={Pearl} />
 					<Route path={'/logs'} component={Logs} />
 					<Route path={'/faq'} component={Faq} />
 					<Route component={Default}/>

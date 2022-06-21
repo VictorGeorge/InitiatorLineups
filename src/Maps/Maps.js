@@ -10,6 +10,7 @@ import map_4 from '../Media/map_4.jpg';
 import map_5 from '../Media/map_5.JPG';
 import map_6 from '../Media/map_6.JPG';
 import map_7 from '../Media/map_7.JPG';
+import map_8 from '../Media/map_8.jpg';
 
 const Maps = () => {
 	return (
@@ -49,6 +50,9 @@ const Maps = () => {
 									</Link>
 									<Link className={classes.link} style={{ textDecoration: 'none' }} to={'/fracture'}>
 										<Map title={'Fracture'} location={'Santa Fe'} map={map_7} />
+									</Link>
+									<Link className={classes.link} style={{ textDecoration: 'none' }} to={'/pearl'}>
+										<Map title={'Pearl'} location={'Lisbon'} map={map_8} />
 									</Link>
 								</div>
 							</div>

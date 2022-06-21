@@ -85,6 +85,13 @@ const Nav = () => {
 									>
 										<h1>Fracture</h1>
 									</Link>
+									<Link
+										className={classes.link}
+						
+										to={'/pearl'}
+									>
+										<h1>Pearl</h1>
+									</Link>
 								</div>
 							</div>
 						</li>
